@@ -35,7 +35,7 @@ const RegisterForm = () => {
   const handleRegister = (e) => {
     e.preventDefault()
     const response = axios
-      .post('https://cms.ourcarediary.com/api/register', {
+      .post('https://apitest.lumin.institute/api/register', {
         name,
         email,
         password,

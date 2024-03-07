@@ -28,7 +28,7 @@ const LoginForm = () => {
     e.preventDefault()
 
     const response = axios
-      .post('https://cms.ourcarediary.com/api/login', {
+      .post('https://apitest.lumin.institute/api/login', {
         email,
         password,
       })

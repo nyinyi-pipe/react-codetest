@@ -46,7 +46,7 @@ const Profile = () => {
 
     try {
       const res = await axios.get(
-        `https://cms.ourcarediary.com/api/patients/${user.user.patient.id}`,
+        `https://apitest.lumin.institute/api/patients/${user.user.patient.id}`,
         config
       )
       console.log(res.data.data)
@@ -74,7 +74,7 @@ const Profile = () => {
 
     axios
       .post(
-        `https://cms.ourcarediary.com/api/patients/${patient_id}/avatar`,
+        `https://apitest.lumin.institute/api/patients/${patient_id}/avatar`,
         formData,
         config
       )
@@ -109,7 +109,7 @@ const Profile = () => {
     
       const response = axios
         .post(
-          'https://cms.ourcarediary.com/api/patients',
+          'https://apitest.lumin.institute/api/patients',
           {
             user_id: user_id,
             first_name: firstName,

@@ -16,7 +16,7 @@ const Symptom = () => {
     const getSymptoms = async () => {
       try {
         const res = await axios.get(
-          'https://cms.ourcarediary.com/api/symptoms',
+          'https://apitest.lumin.institute/api/symptoms',
           config
         )
         console.log(res.data)
